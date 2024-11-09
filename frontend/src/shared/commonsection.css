@@ -1,0 +1,49 @@
+.common__section {
+    position: relative; /* Allows absolute positioning of overlay */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../assets/images/accomodation.jpg") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /* Hides overflow for added elements */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Animation for scaling */
+}
+
+.common__section:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.common__section::before {
+    content: ""; /* Creates a pseudo-element for additional styling */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); /* Soft white overlay */
+    border-radius: 12px; /* Match the section's border radius */
+    transition: opacity 0.3s ease; /* Transition for opacity */
+    z-index: 1; /* Ensure it's below text but above the image */
+}
+
+.common__section:hover::before {
+    opacity: 0; /* Fade out overlay on hover */
+}
+
+.common__section h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700; /* Bold text for prominence */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Soft shadow for readability */
+    letter-spacing: 1px; /* Space between letters for elegance */
+    transition: transform 0.3s ease; /* Animation for text scaling */
+}
+
+.common__section h1:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

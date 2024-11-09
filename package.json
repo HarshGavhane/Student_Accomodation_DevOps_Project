@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.0.0",
+    "react-date-range": "^1.3.0",
+    "react-dev-utils": "^12.0.1",
+    "react-scripts": "^5.0.1"
+  },"proxy": "http://localhost:8800/api"
+
+}

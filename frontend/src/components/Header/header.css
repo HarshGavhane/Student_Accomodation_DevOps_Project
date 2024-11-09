@@ -1,0 +1,130 @@
+:root {
+    --heading-color: #333;
+    --secondary-color: rgb(247, 139, 6); /* Warm orange color (rgb) */
+    --button-bg-color: #f9f9f9; /* Lighter background color */
+    --button-hover-bg-color: #ececec; /* Lighter hover effect */
+    --username-color: #555; /* Slightly lighter username color */
+    --logout-hover-bg-color: rgba(247, 139, 6, 0.1); /* Light shade of orange for logout button hover */
+  }
+  
+  .header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  .navigation {
+    flex-grow: 1;
+  }
+  
+  .menu {
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  .nav__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .nav__item a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav__item a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .nav__item a.active__link {
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  
+  .nav__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .username {
+    color: var(--username-color); /* Lighter username color */
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 8px 20px;
+  }
+  
+  .secondary__btn {
+    background-color: var(--button-bg-color);
+    color: var(--heading-color);
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .secondary__btn:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--secondary-color);
+  }
+  
+  .primary__btn {
+    background-color: var(--secondary-color); /* Warm orange color (rgb) */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .primary__btn:hover {
+    background-color: darken(var(--secondary-color), 10%);
+  }
+  
+  /* Hover effect for Logout button */
+  .logout-btn:hover {
+    background-color: var(--logout-hover-bg-color); /* Light orange background */
+    color: var(--secondary-color); /* Change text color to orange */
+  }
+  
+  .mobile__menu {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    display: none;
+  }
+  
+  .sticky__header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px -3px #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+  
+    .mobile__menu {
+      display: block;
+    }
+  
+    .navigation.active {
+      display: block;
+    }
+  
+    .logo img {
+      width: 120px;
+    }
+  }
+  

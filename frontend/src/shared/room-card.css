@@ -1,0 +1,159 @@
+/* Base styling for the card container */
+.room__card {
+    margin: 20px; /* Margin around each card for spacing */
+    width: 100%; /* Allow card to use full width of the container */
+    max-width: 300px; /* Optional: Set a max width if desired */
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 10px; /* Rounded corners for a soft look */
+    overflow: hidden; /* Ensures content does not overflow */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px; /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Room image styling */
+.room__img {
+    position: relative;
+    height: 180px; /* Set a fixed height for image */
+}
+
+.room__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover image without distorting */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Featured tag styling */
+.room__img span {
+    position: absolute;
+    bottom: 10px; /* Positioned at the bottom of the image */
+    right: 10px; /* Positioned to the right */
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem; /* Padding for the tag */
+    border-radius: 20px; /* Rounded corners for the tag */
+    font-size: 0.9rem; /* Font size */
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; /* Shadow effect for tag */
+}
+
+/* Card body styles */
+.card__top {
+    padding: 15px; /* Padding around top section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Location and rating styling */
+/* Location and rating styling */
+.room__location {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 0.8rem; /* Main font size */
+    display: flex;
+    align-items: center;
+}
+
+.room__location span {
+    font-size: 0.6rem; /* Smaller font size for available rooms text */
+    color: #888; /* Optional: lighter color for distinction */
+}
+
+
+.room__rating {
+    font-size: 0.9rem; /* Adjust font size */
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+/* Title styling */
+.room__title {
+    margin: 10px 15px; /* Margin for spacing */
+    font-size: 1.1rem; /* Adjusted font size for better fit */
+    color: var(--heading-color);
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+/* Title link styling */
+.room__title a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.room__title a:hover {
+    color: var(--secondary-color); /* Color change on hover */
+}
+
+/* Bottom section styles */
+.card__bottom {
+    padding: 15px; /* Padding for bottom section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eaeaea; /* Divider line */
+}
+.card__bottom h5 {
+    font-size: 1rem; /* Adjusted font size for the price text */
+    color: #333; /* Optional: change color if needed */
+}
+
+.card__bottom h5 span {
+    font-size: 0.8rem; /* Smaller font size for the “/per room/” text */
+    color: #666; /* Optional: lighter color for distinction */
+}
+
+/* Available rooms styling */
+.available__rooms {
+    font-size: 0.85rem; /* Adjust font size for better fit */
+    color: #555; /* Gray color for text */
+    margin-top: 5px; /* Space above available rooms text */
+}
+
+/* Booking button styles */
+.booking__btn {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 25px; /* Rounded button corners */
+    color: #fff;
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1rem; /* Font size for button text */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+    text-align: center; /* Centered text */
+    width: 100%; /* Make button fill width of container */
+    max-width: 120px; /* Optional: set a max width */
+}
+
+.booking__btn:hover {
+    background: darken(var(--secondary-color), 10%); /* Darken on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Card hover effects */
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px; /* Increased shadow depth */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .room__title {
+        font-size: 1rem; /* Adjust title size */
+        margin: 8px 10px; /* Adjust margin for smaller screens */
+    }
+
+    .booking__btn {
+        font-size: 0.9rem; /* Adjust button text size */
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    .room__location,
+    .room__rating {
+        font-size: 0.85rem; /* Adjust size for smaller screens */
+    }
+}

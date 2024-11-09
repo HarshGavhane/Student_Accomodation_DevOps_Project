@@ -1,0 +1,48 @@
+.about-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/images/hero-img02.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust based on your layout */
+}
+
+.about-content {
+    color: #fff; /* White text for better readability */
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    max-width: 800px; /* Limits width for readability */
+    margin-left: auto;
+    margin-right: auto; /* Center align the text block */
+}
+
+.about-button {
+    padding: 12px 30px;
+    background-color: rgb(247, 139, 6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.about-button:hover {
+    background-color: #ff9800; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}

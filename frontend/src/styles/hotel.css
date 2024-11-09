@@ -1,0 +1,196 @@
+.hotelContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hotelWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+    position: relative;
+}
+
+.bookNow {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border: none;
+    padding: 12px 25px; /* Increased padding for a better button size */
+    background-color: #f78c0a; /* Brighter orange */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
+}
+
+.bookNow:hover {
+    background-color: #f57c00; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.hotelTitle {
+    font-size: 26px; /* Increased title size */
+    color: #333; /* Darker color for better contrast */
+    font-weight: bold; /* Bolder title */
+}
+
+.hotelAddress {
+    font-size: 14px; /* Slightly larger for readability */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotelDistance {
+    color: #f78c0a; /* Consistent with the button */
+    font-weight: 500;
+}
+
+.hotelPriceHighlight {
+    color: #7FFF00; /* Bright lime green for emphasis */
+    font-weight: 600; /* Bold for importance */
+}
+
+.hotelImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Added gap for better spacing */
+}
+
+.hotelImgWrapper {
+    width: 32%; /* Adjusted for better fit */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow for images */
+}
+
+.hotelImg {
+    width: 100%;
+    height: 100%; /* Ensure full coverage */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.hotelImg:hover {
+    transform: scale(1.05); /* Zoom on hover */
+}
+
+.hotelDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hotelDetailsTexts {
+    flex: 3;
+}
+
+.hotelDesc {
+    font-size: 16px; /* Increased for better readability */
+    margin-top: 20px;
+    color: #555; /* Softer text color */
+}
+
+.hotelDetailsPrice {
+    flex: 1;
+    background-color: #f1f8ff; /* Softer background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hotelDetailsPrice h1 {
+    font-size: 20px; /* Increased header size */
+    color: #333; /* Darker color for contrast */
+}
+
+.hotelDetailsPrice span {
+    font-size: 14px;
+    color: #666; /* Softer gray */
+}
+
+.hotelDetailsPrice h2 {
+    font-weight: 400;
+    color: #888; /* Softer gray for secondary heading */
+}
+
+.hotelDetailsPrice button {
+    border: none;
+    padding: 12px 25px; /* Increased padding */
+    background-color: #f78c0a; /* Bright orange */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
+}
+
+.hotelDetailsPrice button:hover {
+    background-color: #f57c00; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.slider {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to top */
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    z-index: 999; /* Above other content */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering */
+    padding: 20px; /* Optional padding */
+}
+
+.sliderWrapper {
+    max-width: 100%; /* Adjust as needed */
+    max-height: 100%; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderImg {
+    width: 80%; /* Responsive */
+    max-height: 80vh; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.ri-close-circle-fill {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #ebf3ff; /* Soft light color */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.ri-close-circle-fill:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.ri-arrow-left-circle-fill,
+.ri-arrow-right-circle-fill {
+    margin: 20px;
+    font-size: 50px;
+    color: #ebf3ff; /* Soft light color */
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for both properties */
+}
+
+.ri-arrow-left-circle-fill:hover,
+.ri-arrow-right-circle-fill:hover {
+    transform: scale(1.1); /* Scale on hover */
+    color: #fff; /* Change color on hover */
+}
